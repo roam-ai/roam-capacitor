@@ -1,3 +1,13 @@
+import type { PluginListenerHandle } from '@capacitor/core';
 export interface RoamPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  addListener(eventName: 'location', listenerFunc: (result: { location: Location, user: RoamUser }) => void): Promise<PluginListenerHandle> & PluginListenerHandle;
+}
+export interface Location {
+  latitude: number;
+  longitude: number;
+  accuracy?: number;
+}
+export interface RoamUser {
+  userId?: string;
+  description?: string;
 }

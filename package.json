@@ -1,7 +1,7 @@
 {
   "name": "roam-capacitor",
   "version": "0.0.1",
-  "description": "AboutCordova Location SDK. High accuracy and battery efficient location SDK for iOS and Android by Roam.ai",
+  "description": "Capacitor Roam SDK. High accuracy and battery efficient location SDK for iOS and Android by Roam.ai",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
